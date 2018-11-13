@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the chapter for Reverse Engineering from Natural Language Requirements
+%
+% It is based on the  sample root file for author's "contribution" to a contributed volume
+% 
+%
+%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED PACKAGES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox]{svmult}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+%
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+
+
+\usepackage{newtxtext}       % 
+\usepackage{newtxmath}       % selects Times Roman as basic font
+
+% see the list of further useful packages
+% in the Reference Guide
+
+% OWN PACKAGES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url}
+
+%%%%%% graphics path and files %%%%%%%%
+\graphicspath{{./figs/}}
+\DeclareGraphicsExtensions{.eps,.pdf,.bmp,.png,.jpg, .jpeg}
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title*{Variability Extraction From Natural Language Requirements}
+% Use \titlerunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\author{Sandro Schulze and Yang Li}
+% Use \authorrunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\institute{Sandro Schulze 
+\at Otto-von-Guericke Universit\"at Magdeburg, Faculty of Computer Science, Universit\"atsplatz 2, 39106 Magdeburg, 
+\email{\url{sanschul@iti.cs.uni-magdeburg.de}}
+\and Yang Li
+\at Otto-von-Guericke Universit\"at Magdeburg, Faculty of Computer Science, Universit\"atsplatz 2, 39106 Magdeburg, 
+\email{\url{yang.li@ovgu.de}}
+}
+%
+% Use the package "url.sty" to avoid
+% problems with special characters
+% used in your e-mail or web address
+%
+\maketitle
+
+\abstract*{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.
+Please use the 'starred' version of the \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+
+\abstract{Each chapter should be preceded by an abstract (no more than 200 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter.\newline\indent
+Please use the 'starred' version of the \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+
+\section{Introduction}
+\label{sec:intro}
+\index{Intro} goes here
+
+Example bib reference: \cite{VidyaSagarA14}. \\
+
+\begin{figure}
+\includegraphics{fig_nlp}
+\caption{example graphic, showing a general NLP process for variability extraction}
+\label{fig:nlp-general}
+\end{figure}
+
+\section{Section Heading}
+\label{sec:2}
+% Always give a unique label
+% and use \ref{<label>} for cross-references
+% and \cite{<label>} for bibliographic references
+% use \sectionmark{}
+% to alter or adjust the section heading in the running head
+
+\bibliographystyle{spmpsci}
+\bibliography{Requirements-Schulze} 
+\end{document}

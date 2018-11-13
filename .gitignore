@@ -1,0 +1,16 @@
+# generated TeX files
+*.aux
+*.log
+*.bbl
+*.blg
+*.ilg
+*.idx
+*.thm
+
+
+# files Specific to TeXShop
+.DS_Store
+*.synctex.gz
+
+# we also exclude the PDF to avoid merge conflicts
+*.pdf
