@@ -13,4 +13,4 @@
 *.synctex.gz
 
 # we also exclude the PDF to avoid merge conflicts
-*.pdf
+Requirements-Schulze.pdf
